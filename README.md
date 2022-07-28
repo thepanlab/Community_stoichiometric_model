@@ -19,6 +19,9 @@ To access redundancy of metabolic pathways in this stoichiometric model, each re
    
 # How to run the model
 
+* reaction matrix and metadata measured from experiment are as the input of the model.
+
+
 
 
 
