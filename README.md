@@ -12,5 +12,10 @@ To access redundancy of metabolic pathways in this stoichiometric model, each re
 * The general concept of the stoichiometric model under control condition
 
    ![image](https://user-images.githubusercontent.com/60108209/181587792-5e10ef75-567d-4ed7-b398-cf37ddf3724e.png)
+   
+* The fitting result and possible fluxes under control condition 
+   
+   ![image](https://user-images.githubusercontent.com/60108209/181590693-8f406b6f-fe65-47a1-80e7-09b2eb0135f1.png)
+
 
 
