@@ -25,6 +25,18 @@ To access redundancy of metabolic pathways in this stoichiometric model, each re
   * put the csv files of reaction matrix, metadata and matlab script in one folder, and run the script.
   
     We only used GC analysis the CO2 in the gas phase, but it was not a direct representation of CO2 produced from the reactions because of the buffer and pH effects       on equilibrium, so when did fitting, we remove the CO2 from the matrix.
+    
+# Questions
+
+  Kristopher A. Hunt
+  hunt0362@uw.edu
+  
+  Dongyu Wang
+  dywang@ou.edu
+  
+  Chongle Pan
+  cpan@ou.edu
+
 
 
 
