@@ -16,6 +16,8 @@ To access redundancy of metabolic pathways in this stoichiometric model, each re
 * The fitting result and possible fluxes under control condition 
    
    ![image](https://user-images.githubusercontent.com/60108209/181591664-edbd30a0-9379-4eed-acfb-87ed4b60db9b.png)
+   
+# How to run the model
 
 
 
