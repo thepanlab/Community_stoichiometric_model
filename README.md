@@ -20,6 +20,9 @@ To access redundancy of metabolic pathways in this stoichiometric model, each re
 # How to run the model
 
 * reaction matrix and metadata measured from experiment are as the input of the model.
+  The matrix and metadata in this paper were put in the script&data folder.
+  
+  We used GC analysis the CO2 in the gas phase, but it was not a direct representation of CO2 produced from the reactions because of the buffer and pH effects on    equilibrium, so when did fitting, we remove the CO2 from the matrix.
 
 
 
