@@ -28,7 +28,7 @@ for k=1:4; % run the entire list then remove a metabolism from the list and run 
                 elseif k==2; [sol2(:,i,rep,k,c)] = lsqnonneg([b(:,1:2) zeros(size(b,1),1) b(:,4) zeros(size(b,1),1) b(:,6:end)],p(i,:)');  
                 elseif k==3; [sol2(:,i,rep,k,c)] = lsqnonneg([b(:,1:2) zeros(size(b,1),2) b(:,5:end)],p(i,:)');  
                 elseif k==4; [sol2(:,i,rep,k,c)] = lsqnonneg([b(:,1:6) zeros(size(b,1),1)],p(i,:)'); end % no methanogen control
-%                 elseif k==4; [sol2(:,i,rep,k,c)] = lsqnonneg(b,p(i,:)'); end % unconstrained control
+%               elseif k==4; [sol2(:,i,rep,k,c)] = lsqnonneg(b,p(i,:)'); end % unconstrained control
                 cm(i,:)=b*sol2(1:end,i,rep,k,c);
             end
             R(rep)=goodnessOfFit(p(7,:)',cm(7,:)','NRMSE')
