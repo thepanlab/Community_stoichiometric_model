@@ -24,15 +24,6 @@ for k=1:4; % run the entire list then remove a metabolism from the list and run 
                 p(i,:)=data(((c-1)*7+d),[1 16 19 25 31 34]+rep-1);
                 p(i,1)=-(data(((c-1)*7+d),1+rep-1)-data(((c-1)*7+d),4+rep-1)); % calculate the glucose equivalent consumed
                 % evaluate the collection of reactions removing one to test its importance
-%                 if k==1;     sol2(:,i) = lsqnonneg([zeros(size(b,1),1) b(:,2:end)],p(i,:)');  
-%                 elseif k==2; sol2(:,i) = lsqnonneg([b(:,1) zeros(size(b,1),1) b(:,3:end)],p(i,:)');  
-%                 elseif k==3; sol2(:,i) = lsqnonneg([b(:,1:2) zeros(size(b,1),1) b(:,4:end)],p(i,:)');  
-%                 elseif k==4; sol2(:,i) = lsqnonneg([b(:,1:3) zeros(size(b,1),1) b(:,5:end)],p(i,:)');  
-%                 elseif k==5; sol2(:,i) = lsqnonneg([b(:,1:4) zeros(size(b,1),1) b(:,6:end)],p(i,:)');  
-%                 elseif k==6; sol2(:,i) = lsqnonneg([b(:,1:5) zeros(size(b,1),1) b(:,7:end)],p(i,:)');   
-%                 elseif k==7; sol2(:,i) = lsqnonneg([b(:,1:6) zeros(size(b,1),1)],p(i,:)');  
-%                 elseif k==8; sol2(:,i) = lsqnonneg([b(:,1:7)],p(i,:)');  end
-%                 cm(i,:)=b*sol2(1:end,i);
                 if k==1;     [sol2(:,i,rep,k,c)] = lsqnonneg([b(:,1) zeros(size(b,1),1) b(:,3) zeros(size(b,1),1) b(:,5:end)],p(i,:)');  
                 elseif k==2; [sol2(:,i,rep,k,c)] = lsqnonneg([b(:,1:2) zeros(size(b,1),1) b(:,4) zeros(size(b,1),1) b(:,6:end)],p(i,:)');  
                 elseif k==3; [sol2(:,i,rep,k,c)] = lsqnonneg([b(:,1:2) zeros(size(b,1),2) b(:,5:end)],p(i,:)');  
