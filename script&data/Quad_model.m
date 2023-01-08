@@ -2,10 +2,9 @@ clear; clc
 % copy and paste data from "mMole" tab in "balance_calculation"
 data_table = readtable("quad_dataset.csv");
 data = data_table{:,:};
-t={'CD','CD+AM','CD+HM','CD+SR','CD+SR+SO4','CD+AM+HM','CD+AM+HM+SO4','CD+AM+SR','CD+AM+SR+SO4','CD+HM+SR','CD+HM+SR+SO4','CD+AM+HM+SR','CD+AM+HM+SR+SO4'};
+t={'CD+AM+HM+SR','CD+AM+HM+SR+SO4'};
 % define overall reaction stoichiometries (lowest whole intergers on a mole basis)
 %   HL,EA,HF,HG,SG,HS,HM,AM,GS  Legend: HL is homolactate, HF is Acetogenic, HG is Hydrogenic, SG is Sulfidogenic, HS is Hydrogen-based sulfidogenic, HM is Hydrogen-based methanogen, AM is Acetotrophic methanogen, and GS is glucose sink
-%   1  2  3   4   5  6  7
 
 a_table = readtable ("matrix_1.csv")
 a = a_table{:,:}
